@@ -1,0 +1,35 @@
+++ (( opint=1000 ))
+++ (( opint<=100000000 ))
++++ ./sequential 1000 5
+++ seq=0.000076
+++ echo 1000 0.000076
+++ (( opint=opint*10 ))
+++ (( opint<=100000000 ))
++++ ./sequential 10000 5
+++ seq=0.000749
+++ echo 10000 0.000749
+++ (( opint=opint*10 ))
+++ (( opint<=100000000 ))
++++ ./sequential 100000 5
+++ seq=0.007443
+++ echo 100000 0.007443
+++ (( opint=opint*10 ))
+++ (( opint<=100000000 ))
++++ ./sequential 1000000 5
+++ seq=0.073841
+++ echo 1000000 0.073841
+++ (( opint=opint*10 ))
+++ (( opint<=100000000 ))
++++ ./sequential 10000000 5
+++ seq=0.737271
+++ echo 10000000 0.737271
+++ (( opint=opint*10 ))
+++ (( opint<=100000000 ))
++++ ./sequential 100000000 5
+++ seq=7.375455
+++ echo 100000000 7.375455
+++ (( opint=opint*10 ))
+++ (( opint<=100000000 ))
+++ echo
+++ gnuplot -e 'inp = '\''./data/out321_1.dat'\''; out='\''./plots/plot321_1.png'\''' ../plot.sh
+++ set +x

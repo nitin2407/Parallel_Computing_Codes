@@ -1,0 +1,165 @@
++++ ./par_41 100000000 1 static
+++ seq=1.50274
+++ (( thread=1 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 1 static
+++ par=1.50347
++++ echo 1.50274/1.50347
++++ bc -l
+++ echo 1 .99951445655716442629
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 2 static
+++ par=8.6995
++++ echo 1.50274/8.6995
++++ bc -l
+++ echo 2 .17273866314155985976
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 4 static
+++ par=10.1556
++++ echo 1.50274/10.1556
++++ bc -l
+++ echo 4 .14797156248769151994
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 8 static
+++ par=9.89135
++++ echo 1.50274/9.89135
++++ bc -l
+++ echo 8 .15192466144661749912
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 16 static
+++ par=10.3574
++++ echo 1.50274/10.3574
++++ bc -l
+++ echo 16 .14508853573290594164
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
+++ gnuplot -e 'inp = '\''../data/out41_1.dat'\''; out='\''../plots/plot41_1.png'\''' ../plot.sh
+++ c=2
++++ ./par_41 100000000 1 dynamic 1
+++ seq=1.53013
+++ (( thread=1 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 1 dynamic 1
+++ par=1.52954
++++ echo 1.53013/1.52954
++++ bc -l
+++ echo 1 1.00038573688821475737
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 2 dynamic 1
+++ par=9.20816
++++ echo 1.53013/9.20816
++++ bc -l
+++ echo 2 .16617109172733749196
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 4 dynamic 1
+++ par=9.40089
++++ echo 1.53013/9.40089
++++ bc -l
+++ echo 4 .16276437656434656718
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 8 dynamic 1
+++ par=9.86379
++++ echo 1.53013/9.86379
++++ bc -l
+++ echo 8 .15512597084893332076
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 16 dynamic 1
+++ par=10.387
++++ echo 1.53013/10.387
++++ bc -l
+++ echo 16 .14731202464619235582
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
+++ gnuplot -e 'inp = '\''../data/out41_2.dat'\''; out='\''../plots/plot41_2.png'\''' ../plot.sh
+++ c=3
++++ ./par_41 100000000 1 dynamic 1000
+++ seq=0.246375
+++ (( thread=1 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 1 dynamic 1000
+++ par=0.246203
++++ echo 0.246375/0.246203
++++ bc -l
+++ echo 1 1.00069861049621653676
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 2 dynamic 1000
+++ par=0.145521
++++ echo 0.246375/0.145521
++++ bc -l
+++ echo 2 1.69305461067474797451
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 4 dynamic 1000
+++ par=0.071907
++++ echo 0.246375/0.071907
++++ bc -l
+++ echo 4 3.42630063832450248237
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 8 dynamic 1000
+++ par=0.0402188
++++ echo 0.246375/0.0402188
++++ bc -l
+++ echo 8 6.12586651018926472197
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 16 dynamic 1000
+++ par=0.0257809
++++ echo 0.246375/0.0257809
++++ bc -l
+++ echo 16 9.55649337300094255825
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
+++ gnuplot -e 'inp = '\''../data/out41_3.dat'\''; out='\''../plots/plot41_3.png'\''' ../plot.sh
+++ c=4
++++ ./par_41 100000000 1 dynamic 100000
+++ seq=0.243982
+++ (( thread=1 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 1 dynamic 100000
+++ par=0.244556
++++ echo 0.243982/0.244556
++++ bc -l
+++ echo 1 .99765288931778406581
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 2 dynamic 100000
+++ par=0.123426
++++ echo 0.243982/0.123426
++++ bc -l
+++ echo 2 1.97674720075186751575
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 4 dynamic 100000
+++ par=0.0619762
++++ echo 0.243982/0.0619762
++++ bc -l
+++ echo 4 3.93670473504345216389
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 8 dynamic 100000
+++ par=0.0364051
++++ echo 0.243982/0.0364051
++++ bc -l
+++ echo 8 6.70186320048564624187
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
++++ ./par_41 100000000 16 dynamic 100000
+++ par=0.023421
++++ bc -l
++++ echo 0.243982/0.023421
+++ echo 16 10.41723239827505230348
+++ (( thread=thread*2 ))
+++ (( thread<=16 ))
+++ gnuplot -e 'inp = '\''../data/out41_4.dat'\''; out='\''../plots/plot41_4.png'\''' ../plot.sh
+++ c=5
+++ set +x
